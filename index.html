@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên - Đặng Đình Long</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background: #ffffff;
+            color: #0d6efd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 auto 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .card-header p {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-top: 4px;
+        }
+
+        .card-body {
+            padding: 25px 30px;
+        }
+
+        .info-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .info-group:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-size: 13px;
+            color: #6c757d;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 17px;
+            color: #212529;
+            font-weight: 500;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 15px;
+            width: fit-content;
+        }
+
+        .card-footer {
+            background: #f8f9fa;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            border-top: 1px solid #edf2f7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="avatar">L</div>
+            <h1>THÔNG TIN SINH VIÊN</h1>
+            <p>Trang thông tin cá nhân</p>
+        </div>
+        <div class="card-body">
+            <div class="info-group">
+                <span class="info-label">Họ và Tên</span>
+                <span class="info-value"><strong>Đặng Đình Long</strong></span>
+            </div>
+            <div class="info-group">
+                <span class="info-label">Mã số sinh viên (MSSV)</span>
+                <span class="info-value"><span class="badge">25763891</span></span>
+            </div>
+            <div class="info-group">
+                <span class="info-label">Môn học</span>
+                <span class="info-value">An ninh hệ thống</span>
+            </div>
+        </div>
+        <div class="card-footer">
+            Học phần: An ninh hệ thống &bull; 2026
+        </div>
+    </div>
+
+</body>
+</html>
